@@ -1,0 +1,14 @@
+<?php
+use Mike\QRCode\ViewModel\Product\QRCode;
+use Magento\Framework\View\Element\Template;
+
+/**
+ * @var QRCode $viewModel
+ * @var Template $block
+ */
+$viewModel = $block->getViewModel();
+$qrCode = $viewModel->getQRCode();
+?>
+<?php if ($qrCode) : ?>
+    <img src="<?= $qrCode ?>" alt="QR Code" />
+<?php endif; ?>

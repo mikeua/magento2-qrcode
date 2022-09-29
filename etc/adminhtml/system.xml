@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="catalog">
+            <group id="mike_qr_code" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Mike QR Code</label>
+                <field id="count" translate="label comment" type="text" sortOrder="10" showInDefault="1" canRestore="1">
+                    <label>Number of products to fill for QR code</label>
+                </field>
+                <field id="auth_token" translate="label comment" type="text" sortOrder="20" showInDefault="1" canRestore="1">
+                    <label>Authorization token</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
