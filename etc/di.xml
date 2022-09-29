@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Mike\QRCode\Console\Command\FillQRCodeAttribute">
+        <arguments>
+            <argument name="name" xsi:type="string">mike:qrcode:fill</argument>
+            <argument name="description" xsi:type="string">Fill qr attribute with values</argument>
+        </arguments>
+    </type>
+    <type name="Magento\Framework\Console\CommandListInterface">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="mike_qrcode_fill" xsi:type="object">Mike\QRCode\Console\Command\FillQRCodeAttribute</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

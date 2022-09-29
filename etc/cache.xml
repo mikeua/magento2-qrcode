@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Cache/etc/cache.xsd">
+    <type name="qrcode" translate="label,description" instance="Mike\QRCode\Model\Cache\Type">
+        <label>QR Code</label>
+        <description>QR Code product name cache</description>
+    </type>
+</config>
